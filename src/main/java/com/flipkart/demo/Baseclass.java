@@ -116,13 +116,7 @@ public class Baseclass {
 	
 }
 	
-/*	public void getUserName() {
-		driver.get(prop.getProperty("username"));
-	}
 
-	public void getPassword() {
-		driver.get(prop.getProperty("password"));
-	}
-	*/
+	
 
 

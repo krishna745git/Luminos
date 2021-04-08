@@ -144,7 +144,23 @@ public  class LoginPOM extends Baseclass {
 	 
 	 
         
-
+     public void createAccount() {
+    	 
+    	 
+    	 Enterfirstname.sendKeys(prop.getProperty("firstName"));
+    	 
+    	 Enterlasttname.sendKeys(prop.getProperty("lastName"));
+    	 
+    	 Enteremail.sendKeys(prop.getProperty("email"));
+    	 
+    	 Enterconfirmemail.sendKeys(prop.getProperty("password"));
+    	 
+    	 Enterpassword.sendKeys(prop.getProperty("firstName"));
+    	 
+    	 Enterconfirmpassword.sendKeys(prop.getProperty("confirmPassword"));
+    	 
+    	 Created.click();
+     }
 
 	
 	}

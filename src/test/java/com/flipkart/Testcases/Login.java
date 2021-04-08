@@ -24,13 +24,14 @@ import Utility.Library;
 public class Login extends Baseclass {
 	
 	
-	/*public Login() throws IOException {
+	public Login() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
 	
-*/
+
+	LoginPOM l;
 	
 	
 	@BeforeTest
@@ -43,21 +44,27 @@ public class Login extends Baseclass {
 		clearrpop();
 		
 		Mouseover();
+		
+		
+		l=new LoginPOM();
 	}
 	
 	
-	    @Test ( priority = 0 )
+	    @Test
      	public void Login() throws Exception {
 	    	
-	    	LoginPOM l=new LoginPOM();
 	    	
-	    	Library take=new Library();
 	    	
+	    	//Library take=new Library();
+	    	
+	    	
+				l.createAccount();
+			
 	    	
 	    	
 	    //	l.getClosePopup().click();
 	    	
-	    	l.getEnterfirstname().sendKeys("krishna");
+	/*    	l.getEnterfirstname().sendKeys("krishna");
 	    	
 	    	take.capturescreenshot(driver);
 	    	Thread.sleep(5000);
@@ -90,7 +97,7 @@ public class Login extends Baseclass {
 	    	
 	        
 	    	
-	
+	*/
 	    	   }
 	
 
